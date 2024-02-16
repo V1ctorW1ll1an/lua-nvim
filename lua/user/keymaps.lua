@@ -28,7 +28,7 @@ nnoremap("<leader>q", "<cmd>q<cr>", { silent = false })
 nnoremap("<leader>z", "<cmd>wq<cr>", { silent = false })
 
 -- Map Explorer to <leader>e
-nnoremap("<leader>e", "<cmd>Explorer<cr>")
+nnoremap("<leader>e", "<cmd>Ex<cr>")
 
 -- Center buffer while navigating
 nnoremap("<C-u>", "<C-u>zz")
@@ -62,7 +62,6 @@ end)
 nnoremap("<leader>sw", function()
   require("spectre").open_visual({ select_word = true })
 end, { desc = "Search current word" })
-
 
 -- Turn off highlighted results
 nnoremap("<leader>no", "<cmd>noh<cr>")
@@ -268,7 +267,6 @@ nnoremap("<leader>so", ":SymbolsOutline<cr>")
 -- nvim-ufo keybinds
 nnoremap("zR", require("ufo").openAllFolds)
 nnoremap("zM", require("ufo").closeAllFolds)
-
 
 -- Visual --
 -- Disable Space bar since it'll be used as the leader key
